@@ -1,0 +1,152 @@
+body {
+    background-color: #0b0461;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+
+.image-container {
+    text-align: right;
+    /* Alinha o conteúdo à direita */
+}
+
+.image-container img {
+    display: inline-block;
+    margin: 0 auto;
+    /* Centraliza horizontalmente a imagem */
+    margin-top: 10%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 500px;
+    line-height: 20px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: rgb(244, 243, 248);
+}
+
+
+a:hover {
+    color: rgb(109, 12, 235);
+    transition: 0.3s all;
+}
+
+
+span {
+    color: rgb(243, 244, 248);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /*# pra deixar em forma de coluna*/
+    width: 30%;
+    /*uma largura pro formulario de 70%*/
+}
+
+input[type="submit"] {
+    height: 50px;
+    /*#altura*/
+    width: 50%;
+    /*# uma largura pro formulario que ele esta dentro*/
+    background-color: rgb(14, 33, 201);
+    color: white;
+    /*# cor da fonte*/
+    font-weight: bold;
+    /*# intensidade da fonte*/
+}
+
+pra quando o mouse passar por cima ele ter uma interaçao input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+video {
+    width: 620px;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.video-container {
+    width: 50%;
+    text-align: right;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container {
+    text-align: right;
+}
+
+.image-container img {
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 150px;
+}
+
+@media screen and (max-width: 760px){
+    header{
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column;
+    }
+    h2{
+        font-size: 38px;
+    }
+    
+    form{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    img{
+        margin-top: 60px;
+
+    }
+    ul{
+        text-align: center;
+    }
+}
